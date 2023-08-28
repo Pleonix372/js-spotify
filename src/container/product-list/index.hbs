@@ -1,0 +1,30 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main>
+  <h1 class="title">Список товарів</h1>
+
+  <section class="product-list">
+
+    {{#with data.products}}
+    {{#if isEmpty}}
+    <mark>Пустий</mark>
+    {{else}}
+    {{#each list}}
+    {{> product-card }}
+    {{/each}}
+    {{/if}}
+    {{/with}}
+  </section>
+</main>
+
+
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}
