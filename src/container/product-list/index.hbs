@@ -8,15 +8,8 @@
 
   <section class="product-list">
 
-    {{#with data.products}}
-    {{#if isEmpty}}
-    <mark>Пустий</mark>
-    {{else}}
-    {{#each list}}
     {{> product-card }}
-    {{/each}}
-    {{/if}}
-    {{/with}}
+
   </section>
 </main>
 
