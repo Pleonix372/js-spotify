@@ -1,0 +1,47 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as purchaseProduct;
+@use '../../component/field/style.scss' as field;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/button/style.scss' as button;
+@use '../../component/form/style.scss' as form;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(10);
+    padding: s.space(10);
+}
+
+.form-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: s.space(5);
+    padding: s.space(5);
+    border: 1px solid s.color(border);
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+
+    &__name {
+        color: grey;
+    }
+
+    &__order {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: s.space(5);
+    }
+
+    &__order-2 {
+        display: flex;
+        flex-direction: column;
+        gap: s.space(5);
+    }
+}

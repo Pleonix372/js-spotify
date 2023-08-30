@@ -1,0 +1,11 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+
+    &__name {
+        color: grey;
+    }
+}
