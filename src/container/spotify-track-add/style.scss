@@ -1,0 +1,12 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../lib/spotify.scss' as spotify;
+
+.main {
+    height: auto;
+}
+.track__list {
+    background-color: rgb(98, 97, 97);
+    padding: s.space(8);
+    margin-bottom: s.space(10);
+}
